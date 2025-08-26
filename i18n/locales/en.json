@@ -1,0 +1,13 @@
+{
+    "home": {
+        "title": "Welcome to My Website",
+        "description": "This is the home page of my website."
+    },
+    "about": {
+        "title": "About Me",
+        "description": "This is the about page content."
+    },
+    "footer": {
+        "copyright": "© 2023 My Website. All rights reserved."
+    }
+}

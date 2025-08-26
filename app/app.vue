@@ -1,13 +1,7 @@
 <template>
-  <div>
-    <!-- <NuxtRouteAnnouncer />
-    <NuxtWelcome /> -->
-    <h1 class="text-4xl bg-blue-400">
-      yaman
-    </h1>
-  </div>
+  <NuxtLayout>
+    <NuxtPage class="container" />
+  </NuxtLayout>
 </template>
 
-<style>
-
-</style>
+<style></style>

@@ -16,4 +16,26 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
   ],
+  colorMode: {
+    preference: 'system', // User's system preference
+    fallback: 'dark', // when the preference is not available
+    classSuffix: '', // So you get `.dark` instead of `.dark-mode`
+    storage: 'localStorage', // or 'sessionStorage' or 'cookie'
+    storageKey: 'nuxt-color-mode' // Key for storing the color mode
+  },
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
+      { code: 'de', name: 'Deutsch', file: 'de.json' }
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      fallbackLocale: 'en',
+      redirectOn: 'root'
+    }
+  }
 })

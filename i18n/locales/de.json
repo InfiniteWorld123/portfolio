@@ -1,0 +1,13 @@
+{
+    "home": {
+        "title": "Willkommen bei meiner Website",
+        "description": "Dies ist die Startseite meiner Website."
+    },
+    "about": {
+        "title": "Über mich",
+        "description": "Dies ist die Über-mich-Seite."
+    },
+    "footer": {
+        "copyright": "© 2023 Meine Website. Alle Rechte vorbehalten."
+    }
+}
