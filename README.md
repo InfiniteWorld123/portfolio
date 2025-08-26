@@ -1,75 +1,92 @@
-# Nuxt Minimal Starter
+# 🌐 Yaman's Portfolio with Custom Nuxt CMS
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my personal portfolio project!
 
-## Setup
+This is a fully custom portfolio built with **Nuxt 4** and powered by a **handcrafted CMS** integrated with **Supabase** for blogging, content management, and dynamic multi-language support.
 
-Make sure to install dependencies:
+---
+
+## 🚀 Features
+
+* ✅ Built with **Nuxt 4 + TypeScript**
+* 🌍 Supports **Arabic, English, and German** (via `@nuxtjs/i18n` + `zod-i18n`)
+* 📝 Custom **CMS system** for creating, editing, deleting blog posts
+* 🌑 Light / Dark mode (via `@nuxtjs/color-mode` and Naive UI support)
+* 🧩 Modular UI using **Naive UI + TailwindCSS**
+* ✅ State Management with **Pinia** (with persisted state)
+* ✅ Form Validation using **VeeValidate** + Zod
+* 🔐 Integrated with **Supabase** for authentication and database
+* 🌐 SEO-ready, accessible, and mobile responsive
+
+---
+
+## 🧰 Tech Stack
+
+| Technology          | Purpose                       |
+| ------------------- | ----------------------------- |
+| `Nuxt 4`            | Frontend Framework            |
+| `TailwindCSS`       | Styling                       |
+| `Naive UI`          | UI Components                 |
+| `Pinia`             | State Management              |
+| `Supabase`          | Backend (Auth + DB)           |
+| `@nuxtjs/i18n`      | Internationalization          |
+| `VeeValidate + Zod` | Form validation               |
+| `@vueuse/nuxt`      | Utility Composition Functions |
+| `GSAP`              | Animations                    |
+| `Nuxt Color Mode`   | Dark / Light theme            |
+| `Nuxt Image`        | Optimized image rendering     |
+
+---
+
+## 📸 Screenshots
+
+> *To be added later once UI is finalized.*
+
+---
+
+## 🛠️ Setup & Development
+
+### 1. Install dependencies
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### 2. Run dev server
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+### 3. Build for production
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+---
 
-```bash
-# npm
-npm run preview
+## 🔒 Environment Variables
 
-# pnpm
-pnpm preview
+Create a `.env` file for your Supabase credentials:
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```env
+SUPABASE_URL=your_project_url
+SUPABASE_ANON_KEY=your_anon_key
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+## 🧠 Future Plans
+
+*
+
+---
+
+## 📄 License
+
+This project is private and not licensed for public reuse at the moment.
+
+---
+
+Made with ❤️ by **Yaman Warda**
