@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode' // Key for storing the color mode
   },
   i18n: {
-    langDir: 'i18n/locales',
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
