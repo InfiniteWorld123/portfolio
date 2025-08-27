@@ -24,14 +24,14 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode' // Key for storing the color mode
   },
   i18n: {
+    // langDir: 'myLocales',
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
       { code: 'ar', name: 'العربية', file: 'ar.json', dir: 'rtl' },
       { code: 'de', name: 'Deutsch', file: 'de.json' }
     ],
     defaultLocale: 'en',
-    strategy: 'no_prefix',
-    // langDir: 'i18n/locales',
+    strategy: 'prefix',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
