@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vee-validate/nuxt',
     '@nuxtjs/i18n',
-    'nuxt-zod-i18n',
+    //'nuxt-zod-i18n',
     'pinia-plugin-persistedstate',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
