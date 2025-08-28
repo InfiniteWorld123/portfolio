@@ -3,9 +3,7 @@
     <HeaderLogo />
     <HeaderMenu />
     <HeaderLanguageMode />
-    <ClientOnly>
-      <HeaderColorMode />
-    </ClientOnly>
+    <HeaderColorMode />
   </header>
 </template>
 

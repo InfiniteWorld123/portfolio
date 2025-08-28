@@ -1,8 +1,9 @@
 <script setup>
-const { locales, setLocale, locale } = useI18n()
+const { locale, locales, setLocale } = useI18n()
 const selectedLang = ref(locale.value)
+
 const setDirection = () => {
-    const dir = selectedLang.value === 'ar' ? 'rtl' : 'ltr'
+    const dir = selectedLang.value.code === 'ar' ? 'rtl' : 'ltr'
     document.documentElement.setAttribute('dir', dir)
 }
 
@@ -11,15 +12,12 @@ onMounted(() => {
 })
 
 watch(selectedLang, async (newLocale) => {
-    await setLocale(newLocale)
+    console.log('Language changed to:', selectedLang.value.name)
+    await setLocale(newLocale.code)
     setDirection()
 })
 </script>
 
 <template>
-    <select v-model="selectedLang" class="bg-transparent border border-gray-300 rounded p-1">
-        <option v-for="loc in locales" :key="loc.code" :value="loc.code">
-            {{ loc.name }}
-        </option>
-    </select>
+    <Select v-model="selectedLang" :options="locales" optionLabel="name" placeholder="Select a Language" class="w-56" />
 </template>

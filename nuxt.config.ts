@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from '@primeuix/themes/aura';
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -11,11 +12,12 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vee-validate/nuxt',
     '@nuxtjs/i18n',
-    //'nuxt-zod-i18n',
     'pinia-plugin-persistedstate',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    '@primevue/nuxt-module'
   ],
+  ssr: false,
   colorMode: {
     preference: 'system', // User's system preference
     fallback: 'dark', // when the preference is not available
@@ -38,5 +40,17 @@ export default defineNuxtConfig({
       fallbackLocale: 'en',
       redirectOn: 'root'
     }
-  }
+  },
+  primevue: {
+    /* Configuration */
+    options: {
+      theme: {
+        preset: Aura
+      }
+    }
+  },
+  // icon: {
+  //   mode: 'css',
+  //   cssLayer: 'base'
+  // }
 })

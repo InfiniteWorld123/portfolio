@@ -1,14 +1,13 @@
 <script setup>
 const colorMode = useColorMode()
+const toggleColorMode = () => colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'
 </script>
 
 <template>
-    <div>
-        <h1>Color mode: {{ $colorMode.value }}</h1>
-        <select v-model="$colorMode.preference">
-            <option value="system">System</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-        </select>
-    </div>
+    <ToggleSwitch @change="toggleColorMode">
+        <template #handle>
+            <Icon :name="$colorMode.preference === 'light' ? 'ic:baseline-wb-sunny' : 'ic:baseline-dark-mode'"
+                class="text-xl" />
+        </template>
+    </ToggleSwitch>
 </template>

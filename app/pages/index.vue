@@ -4,6 +4,7 @@
         <p>{{ $t('home.description') }}</p>
         <!-- <h1>home page</h1>
         <p>this is a home page</p> -->
+        <TestCom />
     </main>
 
 </template>
